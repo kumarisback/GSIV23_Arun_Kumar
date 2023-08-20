@@ -38,7 +38,7 @@ function App() {
       setPage(page + 1);
       setTotalPage(response.data.total_pages);
     } catch (error) {
-      console.log(error);
+      alert("Something went wrong please try again later");
     }
   };
   useEffect(() => {

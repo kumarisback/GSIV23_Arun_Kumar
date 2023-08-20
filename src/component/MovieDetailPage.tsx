@@ -33,7 +33,8 @@ const MovieDetailPage = () => {
         });
         setMovieDetails(response.data);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        alert("Something went wrong please try again later");
+        
       }
     })();
   }, []);
