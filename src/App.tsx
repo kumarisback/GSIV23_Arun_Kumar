@@ -46,7 +46,6 @@ function App() {
   }, []);
 
   const filterHandler = (e: { target: { value: string } }) => {
-    console.log(e.target.value);
     if (e.target.value.length > 0) {
       setFlag(true);
       const temp = upcomingMovies.filter((movieDetail: any) =>
@@ -59,9 +58,8 @@ function App() {
   };
   return (
     <>
-
       <Router>
-      <NavBar onSearch={filterHandler} />
+        <NavBar onSearch={filterHandler} />
         <Routes>
           <Route
             path="/"
@@ -75,6 +73,7 @@ function App() {
             }
           />
           <Route path="/details/:id" element={<MovieDetailPage />} />
+          <Route path="*" element={<h1>404 Page Not Found</h1>} />
         </Routes>
       </Router>
     </>

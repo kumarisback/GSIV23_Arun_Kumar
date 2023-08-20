@@ -14,7 +14,7 @@ const NavBar: React.FC<NavBarProps> = ({ onSearch }) => {
   return (
     <Navbar fixed="top" expanded={false} className="bg-body-tertiary">
       <Container fluid>
-        {loc.pathname === "/" ? (
+        {!loc.pathname.includes("details") ? (
           <Form className="d-flex box ">
             <Form.Control
               type="search"
