@@ -14,6 +14,7 @@ To run the App locally:-
 
 ## I can do better
 
-I have created this app using Vite and I choose this over create-react-app to build the app faster.
-There are lots of things I can do like styling . I have done decent styling according to the given time.
-I can add testing also for better coverage.
+1. I have created this app using Vite and I choose this over create-react-app to build the app faster.
+2. There are lots of things I can do like styling and more information
+3. I have done decent styling according to the given time.
+4. I can add testing also for better coverage.
