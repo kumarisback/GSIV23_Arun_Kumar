@@ -46,7 +46,6 @@ function App() {
   }, []);
 
   const filterHandler = (e: { target: { value: string } }) => {
-    console.log(e.target.value);
     if (e.target.value.length > 0) {
       setFlag(true);
       const temp = upcomingMovies.filter((movieDetail: any) =>
